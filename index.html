@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Gallery</h1>
+
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="architecture">Architecture</button>
+            <button class="filter-btn" data-filter="tech">Technology</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery">
+            <div class="gallery-item" data-category="nature">
+                <img src="Images/beach.jpg" alt="">
+
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="Images/beaches.jpg" alt="Classic Architecture">
+            </div>
+            <div class="gallery-item" data-category="tech">
+                <img src="Images/building.jpg" alt="Laptop on Desk">
+            </div>
+            <div class="gallery-item" data-category="nature">
+                <img src="Images/buildings.jpg" alt="Forest Path">
+            </div>
+            <div class="gallery-item" data-category="architecture">
+                <img src="Images/forest.jpg" alt="Modern Bridge">
+            </div>
+            <div class="gallery-item" data-category="tech">
+                <img src="Images/forests.jpg" alt="Tech Workspace">
+            </div>
+             <div class="gallery-item" data-category="tech">
+                <img src="Images/mountain.jpg" alt="Tech Mountain">
+                </div>
+                <div class="gallery-item" data-category="tech">
+                <img src="Images/mountains.jpg" alt="Tech Mountains">
+                </div>
+                <div class="gallery-item" data-category="tech">
+                <img src="Images/sunset.jpg" alt="Tech Sunset">
+                </div>
+                <div class="gallery-item" data-category="tech">
+                <img src="Images/sunsets.webp" alt="Tech Sunsets">
+                </div>
+                <div class="gallery-item" data-category="tech">
+                <img src="Images/waterfall.jpg" alt="Tech waterfall">
+                </div>
+                <div class="gallery-item" data-category="tech">
+                <img src="Images/waterfalls.jpg" alt="Tech waterfalls">
+                </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            <button class="nav-btn prev-btn" id="prevBtn">&#10094;</button>
+            <img src="" alt="Enlarged view" class="lightbox-img" id="lightboxImg">
+            <button class="nav-btn next-btn" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
